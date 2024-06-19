@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles_index.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="screen">
+        <div class="container">
+            <div class="image1"></div> <!-- Apply the image1 class here -->
+            <button id="patientBtn" class="button-text">Patient Zone</button>
+        </div>
+        <div class="divider-horizontal"></div>
+        <div class="container">
+            <div class="image2"></div> <!-- Apply the image2 class here -->
+            <button id="caregiverBtn" class="button-text">Caretaker Zone</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("patientBtn").addEventListener("click", () => {
+            window.location.href = "patient.html";
+        });
+
+        document.getElementById("caregiverBtn").addEventListener("click", () => {
+            window.location.href = "caregiver.html";
+        });
+    </script>
+</body>
+</html>

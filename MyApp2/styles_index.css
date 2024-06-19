@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 667px; /* Set the height to 667px to fit the screen */
+  background-color: #f0f0f0;
+}
+
+.screen {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 375px; /* Set the width to 375px to fit the screen */
+  text-align: center;
+}
+
+.container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  background: none;
+  border: none;
+  color: #2061cf;
+  font-family: "Anton";
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+
+
+.image1 {
+  top: 134px;
+  left: 96px;
+  width: 185px;
+  height: 179px;
+  border-radius: 100000px;
+  background-image: url(./background/index_icon1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image2 {
+  top: 353px;
+  left: 99px;
+  width: 177px;
+  height: 186px;
+  border-radius: 100000px;
+  background-image: url(./background/Image.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.divider-horizontal {
+  width: 75%;
+  height: 4px;
+  background-color: #2061cf;
+  margin: 20px auto;
+}
+
+.button-text {
+  color: #2061cf;
+  font-size: 24px;
+  font-family: "Anton";
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 20px 0;
+}

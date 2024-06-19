@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 667px; /* Set the height to 667px to fit the screen */
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.screen {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 375px; /* Set the width to 375px to fit the screen */
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    background-color: #2061cf;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+}
+
+.text1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    position: absolute; /* Center the text */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon3 {
+    color: #ffffff;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.container {
+    margin: 10px 0;
+}
+
+.card1, .card2, .card3 {
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 16px;
+    border: 1px solid #2061cf;
+    box-sizing: border-box;
+    box-shadow: -2px 2px 0px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.card3 {
+    background-color: #ffffff;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.05);
+}
+
+.image1, .image2, .image3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.image1 {
+    background-image: url(./patient/Image.png);
+}
+
+.image2 {
+    background-image: url(./patient/Image2.png);
+}
+
+.image3 {
+    background-image: url(./patient/Image3.png);
+}
+
+.text2, .text4, .text6 {
+    color: #030303;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.text3, .text5, .text7 {
+    color: #3d3d3d;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    line-height: 18px;
+    margin: 10px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .screen {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        height: 48px;
+    }
+
+    .text1 {
+        font-size: 18px;
+    }
+
+    .icon3 {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .image1, .image2, .image3 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text2, .text4, .text6 {
+        font-size: 16px;
+    }
+
+    .text3, .text5, .text7 {
+        font-size: 12px;
+    }
+}

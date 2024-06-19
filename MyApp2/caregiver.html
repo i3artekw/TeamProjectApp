@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caregiver Zone</title>
+    <link rel="stylesheet" href="styles_caregivers.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="header">
+            <div class="icon3" id="backBtn">&lt;</div> <!-- This represents a back arrow icon -->
+            <div class="text1">Caregiver Zone</div>
+        </div>
+        <div class="container">
+            <div class="card1">
+                <div class="image1" id="articleBtn"></div>
+                <div>
+                    <div class="text2">Tips on dementia care</div>
+                    <div class="text3">No matter what kind of caregiver you are, taking care of another person can be overwhelming at times. These tips and suggestions may help with everyday care and tasks.</div>
+                </div>
+            </div>
+        </div>
+        <div class="image-grid">
+            <div class="image2" id="cameraBtn"></div>
+            <div class="image3" id="localizationBtn"></div>
+            <div class="image4" id="loudspeakerBtn"></div>
+            <div class="image5"></div>
+            <div class="image6"></div>
+            <div class="image7"></div>
+            <div class="image8"></div>
+            <div class="image9"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("backBtn").addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+
+        document.getElementById("articleBtn").addEventListener("click", () => {
+            window.location.href = "article.html";
+        });
+
+        document.getElementById("localizationBtn").addEventListener("click", () => {
+            window.location.href = "locator.html"; // Redirect to the new locator page
+        });
+
+        document.getElementById("cameraBtn").addEventListener("click", () => {
+            window.location.href = "camera.html"; // Redirect to the new camera page
+        });
+
+        document.getElementById("loudspeakerBtn").addEventListener("click", () => {
+            alert("Loudspeaker Zone action"); // Placeholder action for loudspeaker
+        });
+
+        // Placeholder actions for other images
+        document.querySelectorAll('.image-grid > div:not(#articleBtn):not(#localizationBtn):not(#cameraBtn):not(#loudspeakerBtn)').forEach(image => {
+            image.addEventListener('click', () => {
+                alert('Other image action');
+            });
+        });
+    </script>
+</body>
+</html>

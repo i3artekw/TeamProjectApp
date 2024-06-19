@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Zone</title>
+    <link rel="stylesheet" href="styles_camera.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="header">
+            <div class="icon3" id="backBtn">&lt;</div> <!-- This represents a back arrow icon -->
+            <div class="text1">Camera Zone</div>
+        </div>
+        <div class="container">
+            <div class="camera-container">
+                <video id="video" autoplay></video>
+                <button id="startBtn">Start Camera</button>
+                <button id="stopBtn">Stop Camera</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("backBtn").addEventListener("click", () => {
+            window.location.href = "caregiver.html";
+        });
+
+        const video = document.getElementById('video');
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        let stream;
+
+        startBtn.addEventListener('click', async () => {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+            } catch (error) {
+                console.error('Error accessing webcam: ', error);
+            }
+        });
+
+        stopBtn.addEventListener('click', () => {
+            if (stream) {
+                const tracks = stream.getTracks();
+                tracks.forEach(track => track.stop());
+                video.srcObject = null;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #70c5ce;
+            margin: 0;
+        }
+        canvas {
+            border: 1px solid #000;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        .controls button {
+            margin: 0 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
+    <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="restartBtn">Restart</button>
+        <button id="leaveBtn">Leave Game</button> <!-- Added button -->
+    </div>
+    <script src="flappybird.js"></script>
+</body>
+</html>
